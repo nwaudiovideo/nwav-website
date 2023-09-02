@@ -180,3 +180,4 @@
     at processTicksAndRejections (node:internal/process/task_queues:84:21)
 2023-09-02 05:18:22.088 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
 2023-09-02 05:23:04.762 [info] New EH opened, aborting shutdown
+2023-09-02 05:55:45.698 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
