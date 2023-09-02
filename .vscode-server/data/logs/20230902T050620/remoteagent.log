@@ -181,3 +181,13 @@
 2023-09-02 05:18:22.088 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
 2023-09-02 05:23:04.762 [info] New EH opened, aborting shutdown
 2023-09-02 05:55:45.698 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2023-09-02 05:58:09.222 [info] Started initializing default profile extensions in extensions installation folder. file:///home/nwaudiovideo/.vscode-server/extensions
+2023-09-02 05:58:09.227 [error] Error: Unable to resolve nonexistent file '/home/nwaudiovideo/.vscode-server/extensions'
+    at D.resolve (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:92:16261)
+    at async Z.k (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:142:54956)
+    at async Z.scanExtensions (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:142:54727)
+    at async m.scanUserExtensions (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:142:47636)
+    at async /home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:142:49631
+    at async m.scanUserExtensions (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:142:47732)
+    at async Y.scanExtensions (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:151:11016)
+    at async l.call (/home/nwaudiovideo/.vscode-server/bin/6c3e3dba23e8fadc360aed75ce363ba185c49794/out/vs/server/node/server.main.js:87:23450)
