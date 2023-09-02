@@ -182,3 +182,4 @@ tmp/*
 .vscode-server/data/User/History/-153d4d7b/entries.json
 .vscode-server/data/logs/20230902T050620/remoteagent.log
 .vscode-server/data/logs/20230902T050620/exthost4/vscode.git/Git.log
+.vscode-server/data/logs/20230902T050620/exthost4/vscode.git/Git.log
