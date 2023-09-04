@@ -1,0 +1,73 @@
+:root {
+    --bg-color: #eeeeeeff;
+
+    --focus: rgb(42, 141, 240);
+    --selected: var(--focus);
+    --info: rgb(42, 141, 240);
+    --success: rgb(60, 225, 34);
+    --valid: var(--success);
+    --warn: rgb(241, 141, 41);
+    --error: rgb(240, 32, 22);
+    --critical: rgb(240, 32, 22);
+    --invalid: rgb(240, 32, 22);
+    
+    --checked: var(--valid);
+    --toggled: var(--checked);
+
+    --bg-radio:#ddd;
+    --bg-slider: #aaa;
+    
+    --rounded: 1rem;
+    --rounded-pill: 2.5rem;
+    --rounded-circle: 100%;
+    --rounded-top:    1rem 1rem 0    0   ;
+    --rounded-right:  0    1rem 1rem 0   ;
+    --rounded-bottom: 0    0    1rem 1rem;
+    --rounded-left:   1rem 0    0    1rem;
+
+    --text-color: black;
+    
+}
+
+html[data-theme='light'] {
+    --bg-color: #eeeeeeff;
+}
+
+html[data-theme='dark'] {
+    --bg-color: #444444ff;
+    --text-color: white;
+    --toggled: #aaa;
+}
+
+.rounded {
+    border-radius: var(--rounded);
+}
+.rounded-pill{
+    border-radius: var(--rounded-pill);
+}
+.rounded-circle{
+    border-radius: var(--rounded-circle);
+}
+.rounded-top{
+    border-radius: var(--rounded-top);
+} 
+.rounded-right{
+    border-radius: var(--rounded-right);
+}
+.rounded-bottom{
+    border-radius: var(--rounded-bottom);
+}
+.rounded-left{
+    border-radius: var(--rounded-left);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--text-color);
+    transition: #ffffff00 5000s ease-in-out 0s;
+    outline: none;
+    border: none;
+}
