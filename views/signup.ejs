@@ -30,20 +30,22 @@
 
   <body>
     <form action="/auth/signup" method="POST">
-      <section>
-        <label for="email">Email</label>
+      <section class="form-field">
+        <i class="bx bx-user"></i>
         <input
+          class="form-input pill-container"
           id="email"
-          name="email"
+          name="username"
           type="email"
           autocomplete="email"
           required
           autofocus
         />
       </section>
-      <section>
-        <label for="current-password">Password</label>
+      <section class="form-field">
+        <i class="bx bx-key"></i>
         <input
+          class="form-input pill-container"
           id="current-password"
           name="password"
           type="password"

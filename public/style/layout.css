@@ -4,6 +4,35 @@ body {
     min-height: 100vh;
 }
 
+button{
+    padding: 10px;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button[type='submit']{
+    text-transform: uppercase;
+    min-width:10rem;
+    border-radius: 5rem;
+    border: 1px var(--text-color) solid;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+
+    padding:1rem;
+    margin:auto;
+
+    width:fit-content;
+    height: auto;
+
+    justify-content: center;
+}
+
 .container {
     display: flex;
 
@@ -31,24 +60,57 @@ body {
     overflow: hidden;
 }
 
+.form-field {
+    display: flex;
+    width: auto;
+    margin: 0 auto 1rem auto;
+}
+.form-field i {
+    position: absolute;
+
+    padding: 10px;
+    color: var(--text-color);
+    min-width: 50px;
+    text-align: center;
+}
+
+.form-input:-webkit-autofill,
+.form-input:-webkit-autofill:hover, 
+.form-input:-webkit-autofill:focus, 
+.form-input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--text-color);
+    transition: #ffffff00 5000s ease-in-out 0s;
+    outline: none;
+}
+
 .form-input{
     width: 100%;
     height:100%;
     margin: 0px;
-    padding: 0px;
+    border: 1px var(--text-color) solid;
+    padding: 10px 10px 10px 50px;
     outline: none;
+    background-color: var(--bg-color);
 }
 
-.form-input:valid{
-    box-shadow: 0px 0px 1px 2px var(--valid);
+.form-input:invalid{
+    /*box-shadow: 0px 0px 1px 2px var(--invalid);*/
+    border: 1px solid var(--invalid);
 }
-.form-input:invalid > :not(.form-input:focus){
-    box-shadow: 0px 0px 1px 2px var(--invalid);
+.form-input:empty{
+    border: 1px var(--text-color) solid;
+}
+.form-input:valid{
+    /*box-shadow: 0px 0px 1px 2px var(--valid);*/
+    border: 1px solid var(--valid);
 }
 .form-input:active,
 .form-input:focus{
-    box-shadow: 0px 0px 1px 2px var(--focus);
+    /*box-shadow: 0px 0px 1px 2px var(--focus);*/
+    border: 1px solid var(--focus);
 }
+
 
 .switch{
     position: relative;

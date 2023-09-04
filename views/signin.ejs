@@ -18,16 +18,49 @@
       href="./favicon/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style/theme.css" />
+    <link rel="stylesheet" href="./style/layout.css" />
     <!---------------------------------------------------->
   </head>
   <body>
+    <form action="/auth/signin/" method="POST">
+      <section class="form-field">
+        <i class="bx bx-user"></i>
+        <input
+          class="form-input pill-container"
+          id="email"
+          name="username"
+          type="email"
+          autocomplete="email"
+          required
+          autofocus
+        />
+      </section>
+      <section class="form-field">
+        <i class="bx bx-key"></i>
+        <input
+          class="form-input pill-container"
+          id="current-password"
+          name="password"
+          type="password"
+          autocomplete="current-password"
+          required
+        />
+      </section>
+      <button type="submit">Sign in</button>
+    </form>
+
     <label class="switch" id="theme-toggle">
       <input type="checkbox" />
       <i class="bx bx-sun slider round"></i>
     </label>
     <!---------------------------------------------------->
-    <script src="./script/theme.css"></script>
+    <script src="./script/theme.js" defer></script>
     <!---------------------------------------------------->
   </body>
 </html>

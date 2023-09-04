@@ -60,14 +60,3 @@ html[data-theme='dark'] {
 .rounded-left{
     border-radius: var(--rounded-left);
 }
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--text-color);
-    transition: #ffffff00 5000s ease-in-out 0s;
-    outline: none;
-    border: none;
-}

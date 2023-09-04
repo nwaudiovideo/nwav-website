@@ -3,8 +3,9 @@ const cors = require("cors");
 const path = require("path");
 const multer = require("multer")();
 const express = require("express");
-const session = require("express-session");
 const router = require("./routes/");
+const passport = require("./config/passport.js");
+const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const client = require("./config/mongoose.js");
 
@@ -22,20 +23,34 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
+    cookie: { maxAge: 60 * 60 * 1000 }, //1 Hour(s)
     store: new MongoStore({
       client: client,
-      ttl: 14 * 24 * 60 * 60,
       autoRemove: "interval",
       autoRemoveInterval: 10,
     }),
   })
 );
 
-//Set static files
+/**
+ * -------------- PASSPORT AUTHENTICATION ----------------
+ */
+app.use(passport.initialize());
+app.use(passport.session());
+
+/**
+ * -------------------- STATIC FILES ---------------------
+ */
 app.use(express.static(path.join(__dirname, "/public/")));
 
-app.use("/", router);
+/**
+ * ---------------------- ROUTER -------------------------
+ */
+app.use(router);
 
+/**
+ * -------------------- START SERVER ---------------------
+ */
 app.listen(process.env.PORT, () => {
   console.log("Listening!");
 });
