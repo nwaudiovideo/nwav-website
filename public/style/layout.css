@@ -113,7 +113,9 @@ form{
 
 
 .switch{
-    position: relative;
+    right: 5px;
+    bottom: 5px;
+    position: fixed;
     display: inline-block;
     width: 60px;
     height: 34px;

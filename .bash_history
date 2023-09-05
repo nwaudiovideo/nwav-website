@@ -38,3 +38,17 @@ npm prune
 npm i ejs
 #1693807117
 npm start
+#1693851005
+git push origin development
+#1693851051
+git push --help
+#1693851139
+git push origin development -f
+#1693851884
+npm start
+#1693846703
+npm i passport
+#1693847499
+npm i bcrypt
+#1693848001
+npm start

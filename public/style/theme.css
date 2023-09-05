@@ -29,6 +29,11 @@
     
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
 html[data-theme='light'] {
     --bg-color: #eeeeeeff;
 }
@@ -59,4 +64,14 @@ html[data-theme='dark'] {
 }
 .rounded-left{
     border-radius: var(--rounded-left);
+}
+
+a {
+    text-decoration: none;
+    padding:none;
+    margin:none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
 }
