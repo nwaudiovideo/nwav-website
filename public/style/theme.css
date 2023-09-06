@@ -1,4 +1,6 @@
 :root {
+    --bg-gradient: linear-gradient(135deg, rgba(5,170,255,1) 0%, rgba(255,122,20,1) 100%);
+
     --bg-color: #eeeeeeff;
 
     --focus: rgb(42, 141, 240);

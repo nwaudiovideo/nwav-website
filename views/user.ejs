@@ -9,7 +9,7 @@
     <!---------------------------------------------------->
 
     <!---------------------------------------------------->
-    <title>NW Audio Video</title>
+    <title>NW Audio Video | <%= user.displayName %></title>
     <!---------------------------------------------------->
 
     <!---------------------------------------------------->
@@ -33,14 +33,19 @@
     <!--                       CSS                      -->
     <link rel="stylesheet" href="./style/theme.css" />
     <link rel="stylesheet" href="./style/layout.css" />
-    <link rel="stylesheet" href="./style/homepage.css" />
+    <link rel="stylesheet" href="./style/user.css" />
     <!---------------------------------------------------->
   </head>
   <body>
-    <a id="auth-button" class="bx bx-user" href="/user/"></a>
-    <div class="hero" id="welcome-hero"></div>
-    <div class="container" id="featured-job"></div>
-
+    <navbar>
+      <img src="<%= user.googleProfile.image %>" alt="" srcset="" />
+      <div class="nav-option">
+        <form action="/auth/logout/" method="POST">
+          <button type="submit" class="bx bx-log-out"></button>
+        </form>
+      </div>
+    </navbar>
+    <div id="body-filter"></div>
     <label class="switch" id="theme-toggle">
       <input type="checkbox" />
       <i class="bx bx-sun slider round"></i>

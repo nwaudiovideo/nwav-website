@@ -1,7 +1,12 @@
+::-webkit-scrollbar{
+    display:none;
+}
 
 body {
     background-color: var(--bg-color);
     min-height: 100vh;
+    margin:0px;
+    padding:0px;
 }
 
 button{
@@ -15,7 +20,7 @@ button{
 
 button[type='submit']{
     text-transform: uppercase;
-    min-width:10rem;
+    width:10rem;
     border-radius: 5rem;
     border: 1px var(--text-color) solid;
 }
@@ -33,6 +38,28 @@ form{
     justify-content: center;
 }
 
+img{
+    object-fit: cover;
+}
+
+navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+}
+
+.nav-option{
+    height: fit-content;
+}
+.nav-option form{
+    padding: 5px 1rem;    
+}
+.nav-option button{
+    width: auto;
+    text-align: center;
+}
+
 .container {
     display: flex;
 
@@ -46,6 +73,12 @@ form{
     align-items: center;
 
     flex-direction: column;
+}
+
+.hero{
+    width:60%;
+    margin: 1rem auto;
+    padding: 0;
 }
 
 .pill-container{

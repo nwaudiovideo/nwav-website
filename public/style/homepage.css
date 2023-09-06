@@ -7,3 +7,15 @@
     color: var(--text-color);
     padding: 10px;
 }
+#welcome-hero{
+    height: 50vh;
+    margin-top: 0px;
+
+    background-image: url('/assets/nwav-logo.svg');
+    background-repeat: no-repeat;
+    background-size:125%;
+    background-position: center;
+}
+#featured-job{
+    width:100%;
+}

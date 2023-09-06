@@ -3,9 +3,7 @@ function isAuth(req, res, next) {
     req.session.touch(); //Refresh session
     next();
   } else {
-    res
-      .status(401)
-      .json({ msg: "You are not authorized to view this resource" });
+    res.redirect("/user/signin");
   }
 }
 

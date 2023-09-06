@@ -1,0 +1,9 @@
+body{
+    background: var(--bg-gradient);
+}
+#body-filter{
+    background-color: var(--bg-color);
+    
+    opacity: 35%;
+    height: 100vh;
+}

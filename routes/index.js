@@ -22,7 +22,9 @@ router.get("/user/signin(.html)?", (req, res, next) => {
 });
 
 router.get("/user/", authorize.isAuth, (req, res, next) => {
-  res.render(path.join(__dirname, "..", "views", "index.ejs"));
+  res.render(path.join(__dirname, "..", "views", "user.ejs"), {
+    user: req.user,
+  });
 });
 /**************************************************************/
 
